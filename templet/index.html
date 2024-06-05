@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascri Art</title>
+  </head>
+  <body>
+    <div class="ascii-titel">
+      <h1>Write something</h1>
+    </div>
+    <form method="post" action="/ascii-art">
+      <textarea name="user_input" placeholder="put something" required="" maxlength="1000">{{.Value}}</textarea>
+      <br />
+      <select name="select">
+        <option value="standard">Standard</option>
+        <option value="shadow">Shadow</option>
+        <option value="thinkertoy">Thinkertoy</option>
+      </select>
+        <input type="color" name="color" id="">
+      <div class="button-div">
+        <button type="submit">Generate ascii</button>
+      </div>
+      <div>
+      </div>
+    </form>
+    <pre style="color: {{ .Color }} ;">{{.Elment}} </pre>
+    
+    {{if .Downlaod}}
+    <a href="/Download">
+      <button>dOWNLOAD</button>
+    </a>
+    {{end}}
+  </body>
+</html>
