@@ -3,7 +3,7 @@
     1) clone the repo "https://learn.zone01oujda.ma/git/ybahbib/ascii-art-web" 
         -> git clone https://learn.zone01oujda.ma/git/ybahbib/ascii-art-web
     2) cd ascii-art-web
-    3) go build main.go
+    3) go build -o main .
     4) run the command: ./main
     5) opne the browser and type http://localhost:8080 
     6) write something in the texterea 
