@@ -12,3 +12,4 @@ func main() {
 	http.HandleFunc("/Download", web.Download)
 	http.ListenAndServe(":9090", nil) // this func for run server
 }
+  
